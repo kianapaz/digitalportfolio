@@ -10,6 +10,28 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Alternative background */
+
+/* Default background */
+.bg-image-0 {
+    background-color: #f0f0f0;
+}
+
+/* Alternative backgrounds */
+.bg-image-1 {
+    color: #f0f0f0;
+    background-image: url('water-night.png');
+}
+
+.bg-image-2 {
+    color: #333;
+    background-image: url('water-day.png');
+}
+
+
+/* You can add more background classes if you have more images */
+
+
 /* The rest of your CSS */
 
 /* body {
