@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: 'Tahoma', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     background-color: #f0f0f0;
     color: #333;
+    font-weight: 100;
+    margin: 50px;
+    padding: 50px;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -24,6 +27,7 @@ body.dark-mode {
 header, footer {
     text-align: center;
     padding: 1rem;
+    font-weight: 100;
 }
 
 nav ul {
@@ -44,3 +48,51 @@ a {
 button {
     cursor: pointer;
 }
+
+h2, h1, h3, h4{
+    font-weight: 100;
+}
+  
+  header {
+    text-align: center;
+    padding: 1rem;
+}
+
+.header-container {
+    display: inline-flex; /* Use inline-flex to center the content as a whole */
+    align-items: center;
+    justify-content: center; /* Center the logo and title */
+}
+
+.logo {
+    height: auto;
+    width: 60px; /* Adjust based on your logo's size */
+    margin-right: 20px; /* Space between the logo and the title */
+}
+
+nav {
+    margin-top: 1rem; /* Optional: Add some space between the header and nav */
+}
+
+nav ul {
+    display: inline-flex; /* Align nav items in a row */
+    list-style: none;
+    padding: 0;
+    justify-content: center; /* Center the navigation links */
+    gap: 20px; /* Space between navigation items */
+}
+
+nav ul li {
+    margin: 0; /* No need for individual margin if gap is used */
+}
+
+nav ul li img {
+    vertical-align: middle; /* Align the toggle dark mode icon with text links */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ensure the rest of your CSS remains unchanged */
