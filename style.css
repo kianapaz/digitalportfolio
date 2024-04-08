@@ -158,7 +158,7 @@ a {
   .custom-divider {
     border: 0; /* Removes the default border */
     height: 2px; /* Sets the height of the line */
-    background-color: #20B2AA; /* Sets the color of the line */
+    background-color: #4169E1;/*#20B2AA; Sets the color of the line */
     margin: 20px 0; /* Adds some space above and below the line */
 }
 
