@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="logo.png" alt="Logo" class="logo"> <!-- Adjust path to your logo -->
+            <img src="img/logo.png" alt="Logo" class="logo"> <!-- Adjust path to your logo -->
             <h1>Kiana Pazdernik</h1>
         </div>
         <nav>
@@ -20,13 +20,14 @@
                 <li><a href="professional.html">Professional Development</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="social.html">Social Interests</a></li>
-                <li><img id="dark-mode-toggle" src="moon.svg" alt="Toggle Dark Mode" style="cursor: pointer; width: 24px; height: 24px;"></li>
+                <li><img id="dark-mode-toggle" src="img/moon.svg" alt="Toggle Dark Mode" style="cursor: pointer; width: 24px; height: 24px;"></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <h1>Social Interests</h1>
+            <hr class="custom-divider">
         </section>
     <section>
         <h2>Social Contributions</h2>
@@ -37,6 +38,7 @@
             <li>Host social events and meet-and-greets to foster a sense of community and encourage networking within the tech field.</li>
             <li>Provide programming assistance to club members, showcasing a commitment to mentorship and knowledge sharing.</li>
         </ul>
+        <hr class="custom-divider">
     </section>
     <section>
         <h2>Personal Interests</h2>
@@ -49,11 +51,33 @@
             <li>Broadening my art skills. I'm trying to learn how to paint and crochet.</li>
         </ul>
     </section>
+    <section>
+        <div id="carousel" class="carousel">
+            <div class="carousel-images">
+              <img src="img/image1.jpeg" alt="Image 1" class="carousel-image">
+              <img src="img/image2.jpeg" alt="Image 2" class="carousel-image">
+              <img src="img/image3.jpeg" alt="Image 3" class="carousel-image">
+              <img src="img/image4.jpeg" alt="Image 3" class="carousel-image">
+              <!-- Add more images as needed -->
+            </div>
+            <button class="carousel-button prev-button">&lt;</button>
+            <button class="carousel-button next-button">&gt;</button>
+          </div>
+          
+    </section>
     </main>
     <footer>
         <div class="footer-container">
-            <p>Contact Information: <a href="mailto:kianapaz021@gmail.com">kianapaz021@gmail.com</a> | Phone: 250-317-2239</p>
-            <p>Follow me on <a href="https://github.com/kianapaz" target="_blank">GitHub</a></p>
+            <a href="https://github.com/kianapaz" target="_blank" title="GitHub">
+                <img src="img/github.svg" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/kiana-pazdernik-7213b8198/" target="_blank" title="LinkedIn">
+                <img src="img/linkedin.svg" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="mailto:kianapaz021@gmail.com" title="Email">
+                <img src="img/mail.svg" alt="Email" class="social-icon">
+            </a>
+            
         </div>
     </footer>
 </body>

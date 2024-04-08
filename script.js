@@ -14,6 +14,37 @@ document.addEventListener('DOMContentLoaded', (event) => {
             document.body.classList.add(backgroundImages[index]);
         });
     });
+
+    const imagesContainer = document.querySelector('.carousel-images');
+    const images = document.querySelectorAll('.carousel-image');
+    const nextButton = document.querySelector('.next-button');
+    const prevButton = document.querySelector('.prev-button');
+
+    let index = 0; // Current image index
+
+    nextButton.addEventListener('click', () => {
+        if (index < images.length - 1) {
+        index++;
+        } else {
+        index = 0; // Loop back to the first image
+        }
+        updateCarousel();
+    });
+
+    prevButton.addEventListener('click', () => {
+        if (index > 0) {
+        index--;
+        } else {
+        index = images.length - 1; // Loop back to the last image
+        }
+        updateCarousel();
+    });
+
+    function updateCarousel() {
+        const imageWidth = images[0].clientWidth;
+        const offset = -index * imageWidth;
+        imagesContainer.style.transform = `translateX(${offset}px)`;
+    }
 });
 
 

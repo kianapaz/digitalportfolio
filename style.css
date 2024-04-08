@@ -20,12 +20,12 @@ body {
 /* Alternative backgrounds */
 .bg-image-1 {
     color: #f0f0f0;
-    background-image: url('water-night.png');
+    background-image: url('/img/water-night.png');
 }
 
 .bg-image-2 {
     color: #333;
-    background-image: url('water-day.png');
+    background-image: url('/img/water-day.png');
 }
 
 
@@ -93,7 +93,7 @@ h2, h1, h3, h4{
 }
 
 nav {
-    margin-top: 1rem; /* Optional: Add some space between the header and nav */
+    margin-top: 1rem;
 }
 
 nav ul {
@@ -117,4 +117,69 @@ a {
     color: inherit;
 }
 
-/* Ensure the rest of your CSS remains unchanged */
+.carousel {
+    position: relative;
+    max-width: 600px; 
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-image {
+    max-width: 100%;
+    display: block;
+    flex: 0 0 auto;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
+  .custom-divider {
+    border: 0; /* Removes the default border */
+    height: 2px; /* Sets the height of the line */
+    background-color: #20B2AA; /* Sets the color of the line */
+    margin: 20px 0; /* Adds some space above and below the line */
+}
+
+footer {
+    color: white;
+    padding: 20px 0; /* Padding above and below the content */
+    text-align: center; /* Center-align the content */
+}
+
+.footer-container a {
+    display: inline-block; /* Display links inline */
+    margin: 0 10px; /* Spacing between links */
+}
+
+.social-icon {
+    width: 30px; /* Size of the social icons */
+    height: 30px; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-container a:hover .social-icon {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
